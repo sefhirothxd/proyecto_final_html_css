@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    #000000,
+    #060003,
+    #0a0008,
+    #0b000e,
+    #090214,
+    #151324,
+    #1c1f35,
+    #212b48,
+    #38456f,
+    #516099,
+    #6d7dc5,
+    #8a9bf2
+  );
+  max-width: 1440px;
+  margin: 0 auto;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 1rem;
+}
+.navbar li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+.header-logo-text {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 3px 0px #898999;
+}
+.navbar-link {
+  color: aliceblue;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+.navbar-link:hover {
+  color: aqua;
+  text-shadow: 2px 3px 0px #898999;
+}
+header > a {
+  width: 100px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header .header-logo {
+  display: block;
+  width: 100px;
+  object-fit: cover;
+}
+header .header-logo:hover {
+  transform: scale(1.2);
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  margin: 10rem 0;
+  line-height: 1.5;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 50%;
+}
+
+.text-content .content__title {
+  font-weight: 900;
+  font-size: 2.925em;
+  letter-spacing: 0.093em;
+  text-shadow: 2px 3px 0px #898999;
+  text-transform: uppercase;
+}
+
+.text-content .content__text {
+  line-height: 2;
+}
+.banner .banner__text-content button {
+  background: transparent;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 1rem;
+}
+.banner .banner__text-content button:hover {
+  background: black;
+  text-shadow: 2px 3px 0px #898999;
+}
+.banner__container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 0 1.5rem;
+  margin: 10rem 0;
+  line-height: 1.5;
+}
+.about-img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.about-img img {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  margin-top: 10rem 0;
+}
+.contact h3 {
+  font-size: 2.9em;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 3px 0px #898999;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+}
+.contacto__form-container textarea {
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  height: 150px;
+}
+
+.contacto__form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.contacto__form-container input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid white;
+  font-size: 1.6rem;
+}
+.contacto__container-img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.contacto__container-img img {
+  transform: scaleX(-1);
+}
+.contacto__container-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.contacto__container-input input {
+  cursor: pointer;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.contacto__container-input input:hover {
+  text-shadow: 2px 3px 0px #898999;
+}
